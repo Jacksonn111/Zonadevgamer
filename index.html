@@ -15,23 +15,24 @@
     header {
       background-color: #1a1a1a;
       text-align: center;
-      padding: 40px 0;
+      padding: 30px 20px;
     }
 
-     header h1 {
+    header h1 {
       color: #00ffcc;
-      font-size: 36px;
-      margin-bottom: -10px;
+      font-size: 32px;
+      margin-bottom: 5px;
     }
 
     header p {
-      color: #fff;
-      margin-top: 10;
+      color: #ccc;
+      margin-top: 5px;
+      font-size: 16px;
     }
 
     .container {
       padding: 20px;
-      max-width: 900px;
+      max-width: 1200px;
       margin: auto;
     }
 
@@ -40,56 +41,91 @@
       border-radius: 10px;
       margin-bottom: 30px;
       padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
     }
 
     .game-section h2 {
       color: #ffcc00;
+      font-size: 24px;
     }
 
     .Zoninha {
       text-align: center;
       color: #00ffcc;
-      font-size: 36px;
-      margin-bottom: -10px;
+      font-size: 28px;
+      margin-bottom: 5px;
     }
 
     .ppp {
       text-align: center;
-      color: #fff;
-      margin-top: 10;
+      color: #ddd;
+      font-size: 16px;
+      margin-bottom: 20px;
     }
 
     iframe {
       width: 100%;
-      height: 400px;
+      height: 300px;
       border: none;
       border-radius: 10px;
     }
 
     .desc {
       margin-top: 10px;
-      color: #fff;
+      color: #ccc;
+      font-size: 15px;
     }
 
     footer {
       text-align: center;
       padding: 20px;
       color: #888;
+      font-size: 14px;
+    }
+
+    /* Responsividade */
+    @media (min-width: 768px) {
+      header h1 {
+        font-size: 40px;
+      }
+
+      iframe {
+        height: 400px;
+      }
+
+      .Zoninha {
+        font-size: 32px;
+      }
+
+      .ppp {
+        font-size: 18px;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .container {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+      }
+
+      .game-section {
+        padding: 30px;
+      }
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1> Desenvolvedor em Progresso👨🏻‍💻
-</h1>
+    <h1>Desenvolvedor em Progresso 👨🏻‍💻</h1>
     <p>Meus Projetos em Desenvolvimento Web</p>
   </header>
 
   <div class="container">
 
     <div class="game-section">
-      <h1 class="Zoninha">Zona Gamer🎮</h1>
+      <h1 class="Zoninha">Zona Gamer 🎮</h1>
       <p class="ppp">Vídeos dos melhores jogos da atualidade</p>
       <h2>Red Dead Redemption 2</h2>
       <iframe src="https://www.youtube.com/embed/gmA6MrX81z4" allowfullscreen></iframe>
