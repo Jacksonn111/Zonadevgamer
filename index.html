@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Meus Projetos</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
     body {
       margin: 0;
@@ -41,7 +42,7 @@
       border-radius: 10px;
       margin-bottom: 30px;
       padding: 20px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     }
 
     .game-section h2 {
@@ -76,11 +77,65 @@
       font-size: 15px;
     }
 
+    /* SOBRE MIM */
+    .sobre-mim {
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      padding: 25px;
+      margin-top: 30px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      font-size: 16px;
+      line-height: 1.6;
+      color: #ddd;
+    }
+
+    .sobre-mim h2 {
+      color: #00ffcc;
+      margin-bottom: 15px;
+    }
+
+    .sobre-mim a {
+      color: #00ffcc;
+      text-decoration: none;
+    }
+
+    .sobre-mim a:hover {
+      text-decoration: underline;
+    }
+
     footer {
       text-align: center;
       padding: 20px;
       color: #888;
       font-size: 14px;
+      background-color: #1a1a1a;
+      margin-top: 40px;
+    }
+
+    .contato {
+      margin-top: 12px;
+    }
+    .contato div {
+      margin-bottom: 6px;
+    }
+
+    /* Botão flutuante do WhatsApp */
+    .botao-whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      padding: 15px;
+      border-radius: 50%;
+      font-size: 24px;
+      z-index: 1000;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      transition: background-color 0.3s ease;
+    }
+
+    .botao-whatsapp:hover {
+      background-color: #1ebe5d;
     }
 
     /* Responsivo para celular */
@@ -172,11 +227,37 @@
       <p class="desc">A nova geração do crime chegou. Com gráficos revolucionários, cidade viva e duas protagonistas em Vice City, GTA VI promete ser o maior e mais ambicioso jogo da Rockstar até hoje.</p>
     </div>
 
+    <!-- SOBRE MIM -->
+    <div class="sobre-mim">
+      <h2>Sobre Mim</h2>
+      <p>Oi, tudo bem?</p>
+      <p>Meu nome é Jackson, tenho 16 anos e estou começando a aprender HTML e CSS.</p>
+      <p>Este site é meu primeiro projeto na programação — um espaço onde pratico e coloco em prática tudo que venho aprendendo sobre desenvolvimento web.</p>
+      <p>Se você encontrar algum erro ou algo que não esteja funcionando direitinho, peço que releve. Ainda estou no começo dessa jornada e aprendendo bastante a cada dia.</p>
+      <p>Minha ideia é ir melhorando o site aos poucos e, em breve, adicionar muitos outros projetos legais.</p>
+      <p>Obrigado por tirar um tempinho pra visitar meu site e acompanhar meu trabalho. Isso significa muito pra mim e me motiva a continuar evoluindo!</p>
+      <br>
+      📧 <strong>Email:</strong> <a href="mailto:jacksondevx@gmail.com">jacksondevx@gmail.com</a><br>
+      📸 <strong>Instagram:</strong> <a href="https://instagram.com/jackson.devx" target="_blank">@jackson.devx</a><br>
+      📱 <strong>WhatsApp:</strong> <a href="https://wa.me/5581988693435" target="_blank">(81) 98869-3435</a>
+    </div>
+
   </div>
 
+  <!-- RODAPÉ -->
   <footer>
-    © 2025 - Desenvolvido por Jackson
+    © 2025 - Desenvolvido por Jackson<br>
+    <div class="contato">
+      <div>Email: <strong>jacksondevx@gmail.com</strong></div>
+      <div>Instagram: <strong>@jackson.devx</strong></div>
+      <div>WhatsApp: <strong>(81) 98869-3435</strong></div>
+    </div>
   </footer>
+
+  <!-- Botão flutuante do WhatsApp -->
+  <a href="https://wa.me/5581988693435" class="botao-whatsapp" target="_blank" title="Fale comigo no WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
 
 </body>
 </html>
